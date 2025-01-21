@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./images/main/header/symbol.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>탐라심</title>
+  <!-- 스와이퍼 슬라이드 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- 심플리css -->
+  <link rel="stylesheet" href="./css/jquery.simplyscroll.css">
+  <!-- 나의 css -->
+  <link rel="stylesheet" href="./css/store.css">
+
+</head>
+
+<body>
+  <!-- 마우스커서 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+  <!-- 해더 -->
+  <header>
+    <ul class="top">
+      <li><a href="#none"><img src="./images/main/header/reservation.png" alt="예약내역이미지"></a></li>
+      <li><a href="#none">예약내역</a></li>
+
+      <li><a href="#none"><img src="./images/main/header/login_logout.png" alt="로그인 로그아웃"></a></li>
+
+      <li><a href="#none">로그인/로그아웃</a></li>
+    </ul>
+    <ul class="gnb">
+      <li class="nav">
+        <a href="./travel.html">레저/관광</a>
+
+      </li>
+      <li class="nav">
+        <a href="./rent.html">숙박/렌트카</a>
+
+      </li>
+      <li class="nav">
+        <a href="./index.html" class="logo"><img src="./images/main/header/logo.png" alt="로고이미지"></a>
+      </li>
+      <li class="nav">
+        <a href="./store.html" class="nav_hover">스토어</a>
+
+      </li>
+      <li class="nav">
+        <a href="./community.html">커뮤니티</a>
+
+      </li>
+    </ul>
+  </header>
+  <!-- 메인배너슬라이드 -->
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="banner1 banner">
+          <div class="slide_text">
+            <h2>산지에서 식탁까지, <br>
+              하루배송의 약속!</h2>
+            <p>제주에서 육지까지 프리미엄 배송!</p>
+            <p>오후 4시 이전 주문건 (주말 · 공휴일 제외) <br>
+              당일배송 약속드립니다!</p>
+          </div>
+          <img src="./images/store/delivery.png" alt="하루배송 배너 이미지">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="banner2 banner">
+          <div class="slide_text">
+            <h2>담을수록 더 큰 즐거움 <br>
+              장바구니로 직행하세요!</h2>
+            <p>금액대별 할인! 5천 원, 1만 원, 2만 원, 최대 3만 원 쿠폰 증정!</p>
+            <p>쇼핑할수록 커지는 혜택! 지금 바로 누려보세요!</p>
+          </div>
+          <img src="./images/store/cart.png" alt="장바구니 배너 이미지">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="banner3 banner">
+          <div class="slide_text">
+            <h2>베스트리뷰 당첨시 <br>
+              적립금 5만원 드려요!</h2>
+            <p>한달간 베스트 리뷰왕을 찾습니다!</p>
+            <p>기 간 : 5월 1일 ~ 5월 30일</p>
+          </div>
+          <img src="./images/store/revew.png" alt="리뷰 배너 이미지">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="black_friday">
+          <p>일년에 단 두번! 스토어 최대 할인!</p>
+          <h2>BLACK <br>
+            FRIDAY!</h2>
+          <p>3월28일(금)/11월28(금) </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- 본문 -->
+  <div class="wrap">
+    <!-- 추천상품 -->
+    <div class="best_Products">
+      <h1>MD <span>추천상품</span></h1>
+      <ul id="scroller">
+        <li>
+          <img src="./images/store/md1.png" alt="고사리">
+          <p>
+            명품식탁<br>
+            제주 생고사리 1kg (200gx5개) <br>
+            <b>19,000원</b> <br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md2.png" alt="흑돼지">
+          <p>
+            바른청년유통<br>
+            제주 흑돼지 미박 오겹살 500g <br>
+            <b>19,000원</b> <br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md3.png" alt="블루베리">
+          <p>
+            폴개협동조합<br>
+            유기농 인증 블루베리 1kg <br>
+            <b>27,000원</b> <br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md4.png" alt="감귤">
+          <p>
+            폴개협동조합<br>
+            GAP인증 감귤 2kg <br>
+            <b>20,000원</b> <br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md5.png" alt="갈치">
+          <p>
+            제주미니<br>
+            제주 은갈치 대 (4~6미 16토막) <br>
+            <b>67,000원</b> <br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md6.png" alt="당근">
+          <p>
+            명품식탁<br>
+            제주 구좌읍 당근 1kg <br>
+            <b>9,800원</b> <br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md7.png" alt="전복">
+          <p>
+            제주미니<br>
+            제주 전복 대 (4~6미) <br>
+            <b>49,000원</b><br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+
+        <li>
+          <img src="./images/store/md8.png" alt="황금향">
+          <p>
+            명품식탁<br>
+            제주 황금향 3kg (중과) <br>
+            <b>29,000원</b><br>
+            <span class="orange_box">당일발송</span>
+          </p>
+          <img src="./images/store/bag_icon.png" alt="장바구니아이콘">
+        </li>
+      </ul>
+    </div>
+
+    <div class="time_sale">
+      <div class="time_sale_in">
+        <div class="text">
+          <h1>오늘만<span>타임세일</span></h1>
+          <p>초특가세일 <br>
+            망설이면 놓쳐요!
+          </p>
+          <img class="sound_L" src="./images/store/sound_L.png" alt="번개1">
+          <img class="sound_R" src="./images/store/sound_R.png" alt="번개1">
+          <img class="whatch" src="./images/store/whatch.png" alt="자명종">
+        </div>
+        <div class="time">
+          <div class="timer" id="timer1">
+            <div class="time-box">
+              <span class="hours"></span>
+              <span class="col">:</span>
+              <span class="minutes"></span>
+              <span class="col">:</span>
+              <span class="seconds"></span>
+            </div>
+            <img src="./images/store/timesale1.png" alt="타임세일1">
+            <p>판매자 배송</p>
+            <h4>제주 청정 흑돼지<br>
+              미박 돈마호크 500g
+            </h4>
+            <p class="price">28,000원</p>
+            <h3>17,900원</h3>
+          </div>
+          <div class="timer" id="timer2">
+            <div class="time-box">
+              <span class="hours"></span>
+              <span class="col">:</span>
+              <span class="minutes"></span>
+              <span class="col">:</span>
+              <span class="seconds"></span>
+            </div>
+            <img src="./images/store/timesale2.png" alt="타임세일2">
+            <p>판매자 배송</p>
+            <h4>제주 청정 옥돔<br>
+              대(230g내외) 4미
+            </h4>
+            <p class="price">98,000원</p>
+            <h3>68,900원</h3>
+          </div>
+          <div class="timer" id="timer3">
+            <div class="time-box">
+              <span class="hours"></span>
+              <span class="col">:</span>
+              <span class="minutes"></span>
+              <span class="col">:</span>
+              <span class="seconds"></span>
+            </div>
+            <img src="./images/store/timesale3.png" alt="타임세일3">
+            <p>판매자 배송</p>
+            <h4>제주 청정 고등어<br>
+              5팩(2.5미/1.1kg)
+            </h4>
+            <p class="price">32,700원</p>
+            <h3>19,900원</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 스토어 굿즈/리빙/먹거리 -->
+    <div class="items">
+      <h1>오직<span>탐라심에서만</span></h1>
+      <div class="tab">
+        <ul class="tabnav">
+          <li><a href="#tab01">굿즈</a></li>
+          <li><a href="#tab02">먹거리</a></li>
+          <li><a href="#tab03">홈리빙</a></li>
+        </ul>
+        <div class="tabcontent">
+          <!-- 굿즈 -->
+          <div id="tab01">
+            <ul class="tab_list">
+              <li><a href="#none">
+                  <img src="./images/store/goods1.png" alt="머그컵">
+                  <p>탐라심 머그컵<br>
+                    19,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/goods2.png" alt="핀뱃지">
+                  <p>탐라심 핀뱃지<br>
+                    3,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/goods3.png" alt="버킷햇">
+                  <p>탐라심 버킷햇<br>
+                    19,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/goods4.png" alt="스티커팩">
+                  <p>탐라심 스티커팩<br>
+                    5,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/goods5.png" alt="사무용집게">
+                  <p>탐라심 사무용 집게<br>
+                    4,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/goods6.png" alt="클립">
+                  <p>탐라심 클립<br>
+                    1,500원
+                  </p>
+                </a></li>
+            </ul>
+          </div>
+          <!-- 먹거리 -->
+          <div id="tab02">
+            <ul class="tab_list">
+              <li><a href="#none">
+                  <img src="./images/store/food1.png" alt="돗멘">
+                  <p>제주 흑돼지 라면 '톳맨'<br>
+                    2,500원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/food2.png" alt="똣똣라면">
+                  <p>제주 똣똣 배지근 라면<br>
+                    9,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/food3.png" alt="마음샌드">
+                  <p>제주 마음샌드<br>
+                    14,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/food4.png" alt="우유쿠키">
+                  <p>제주 우유 쿠키<br>
+                    15,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/food5.png" alt="샌드웨이퍼">
+                  <p>제주 샌드 웨이퍼<br>
+                    9,900원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/food6.png" alt="우도땅콩찰떡">
+                  <p>우도땅콩찰떡<br>
+                    5,000원
+                  </p>
+                </a></li>
+            </ul>
+          </div>
+          <!-- 리빙 -->
+          <div id="tab03">
+            <ul class="tab_list">
+              <li><a href="#none">
+                  <img src="./images/store/home_living1.png" alt="룸스프레이">
+                  <p>룸스프레이<br>
+                    10,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/home_living2.png" alt="미니손거울">
+                  <p>미니손거울<br>
+                    5,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/home_living3.png" alt="하르방 마그넷">
+                  <p>하르방 마그넷<br>
+                    7,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/home_living4.png" alt="귤캐릭터 석고 방향제">
+                  <p>귤캐릭터 석고 방향제<br>
+                    7,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/home_living5.png" alt="제주씨앗">
+                  <p>제주씨앗<br>
+                    5,000원
+                  </p>
+                </a></li>
+              <li><a href="#none">
+                  <img src="./images/store/home_living6.png" alt="동백 마크라메 키링">
+                  <p>동백 마크라메 키링<br>
+                    15,000원
+                  </p>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 이벤트배너 -->
+  <div class="event_banner">
+    <div class="event1">
+      <div class="evevt1_in">
+      <h2>첫 구매 고객대상 <br>
+        10%할인쿠폰 증정</h2>
+      <a href="#none">쿠폰 다운받기</a>
+      </div>
+      <img src="./images/store/event1.png" alt="이벤트배너이미지1">
+    </div>
+    <div class="event2">
+      <div class="event2_in">
+      <h2>선물하기 이용 시<br>
+        럭키 드로우 참여 1회권</h2>
+      <a href="#none">상품 선물하기</a>
+    </div>
+      <img src="./images/store/event2.png" alt="이벤트배너이미지2">
+    </div>
+  </div>
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_in">
+      <ul class="sns">
+        <li><a href="#none"><img src="./images/main/footer/youtube_white.png" alt="유투브"></a></li>
+        <li><a href="#none"><img src="./images/main/footer/insta_white.png" alt="인스타"></a></li>
+        <li><a href="#none"><img src="./images/main/footer/facebook_white.png" alt="페이스북"></a></li>
+        <li><a href="#none"><img src="./images/main/footer/twitter_white.png" alt="트위터"></a></li>
+      </ul>
+      <!-- 푸터 -->
+      <div class="footer_text">
+        <ul class="footer_logo">
+          <li><a href="#none"><img src="./images/main/footer/symbol_white.png" alt="심볼"></a></li>
+          <li><a href="#none"><img src="./images/main/footer/logo_white.png" alt="로고"></a></li>
+        </ul>
+        <div class="footer_center">
+          <ul>
+            <li><a href="#none">서비스 이용약관</a></li>
+            <li><a href="#none">개인정보 처리방침</a></li>
+            <li><a href="#none">사업자정보확인</a></li>
+          </ul>
+          <p>주소 제주특별시 서귀포 남원읍 원님로 473</p>
+          <p>FAX 0303-3447-0409</p>
+          <p>통신판매업등록번호 2025-1234567-12-3-4567</p>
+          <p>사업자등록번호 123-45-6789</p>
+        </div>
+        <div class="footer_tel">
+          <h1>064-764-0116</h1>
+          <p>월~금 09:00 - 18:00 점심시간 12:00 - 13:00</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <a href="#" class="top_bt">TOP</a>
+
+
+
+
+
+
+  <!-- 자바스트립 라이브러리 -->
+  <script src=" ./script/jquery-3.7.1.min.js"></script>
+  <!-- 스와이퍼슬라이드 자바스크립트 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- 심플리스크롤 -->
+  <script src="./script/jquery.simplyscroll.js"></script>
+
+  <!-- 나의 자바스크립트 -->
+  <script src="./script/store.js"></script>
+</body>
+
+</html>

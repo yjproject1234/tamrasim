@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./images/main/header/symbol.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>탐라심</title>
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- swiper slide css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- 나의 css -->
+  <link rel="stylesheet" href="./css/travel.css">
+</head>
+
+<body>
+  <!-- 마우스커서 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+  <!-- 해더 -->
+  <header>
+    <ul class="top">
+      <li><a href="#none"><img src="./images/main/header/reservation.png" alt="예약내역이미지"></a></li>
+      <li><a href="#none">예약내역</a></li>
+
+      <li><a href="#none"><img src="./images/main/header/login_logout.png" alt="로그인 로그아웃"></a></li>
+
+      <li><a href="#none">로그인/로그아웃</a></li>
+    </ul>
+    <ul class="gnb">
+      <li class="nav">
+        <a href="./travel.html" class="nav_hover">레저/관광</a>
+
+      </li>
+      <li class="nav">
+        <a href="./rent.html">숙박/렌트카</a>
+
+      </li>
+      <li class="nav">
+        <a href="./index.html" class="logo"><img src="./images/main/header/logo.png" alt="로고이미지"></a>
+      </li>
+      <li class="nav">
+        <a href="./store.html">스토어</a>
+
+      </li>
+      <li class="nav">
+        <a href="./community.html">커뮤니티</a>
+
+      </li>
+    </ul>
+  </header>
+  <div class="visual">
+    <!-- 메인베너 이미지 -->
+    <div data-aos="fade-up" class="swiper visual_img_slide">
+      <div class="visual_img swiper-wrapper">
+        <div class="banner1 swiper-slide">
+          <div data-aos="fade-left"><img src="./images/travel/visual/visual1.png" alt="메인베너이미지1"></div>
+        </div>
+        <div class="banner2 swiper-slide">
+          <div><img src="./images/travel/visual/visual2.png" alt="메인베너이미지2"></div>
+        </div>
+        <div class="banner3 swiper-slide">
+          <div><img src="./images/travel/visual/visual3.png" alt="메인베너이미지3"></div>
+        </div>
+        <div class="banner4 swiper-slide">
+          <div><img src="./images/travel/visual/visual4.png" alt="메인베너이미지4"></div>
+        </div>
+      </div>
+      <div class="button">
+        <!-- 불릿버튼 -->
+        <div class="bullit">
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 화살표 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- 메인배너 글상자 -->
+    <div  class="text_slide" >
+      <div data-aos="fade-right" class="swiper visual_text">
+        <div class="swiper-wrapper">
+          <div class="banner1_text swiper-slide">
+            <h1>
+              제주의 봄, <br>
+              꽃길 따라 설렘 한가득!
+            </h1>
+            <p>
+              탐라심이 추천하는<br>
+              봄여행 코스 지금만나보세요!
+            </p>
+          </div>
+          <div class="banner2_text swiper-slide">
+            <h1>
+              가정의 달<br>
+              특별 할인 대전
+            </h1>
+            <p>
+              가정의 달 맞이<br>
+              탐라심이 준비한 야심찬 특가 여행 찬스!
+            </p>
+          </div>
+          <div class="banner3_text swiper-slide">
+            <h1>
+              제주에서 머물 곳, <br>
+              색다르게 선택해볼까?
+            </h1>
+            <p>
+              여기가 해외인가? 제주인가? <br>
+              탐라심이 야심차게 준비한 이색숙소
+            </p>
+          </div>
+          <div class="banner4_text swiper-slide">
+            <h1>
+              잊지 못할 제주 여행, <br>
+              색다른 체험으로 완성하다.
+            </h1>
+            <p>
+              탐라심이 추천하는 이색체험 <br>
+              지금만나보세요!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <h1 data-aos="fade-up"><span>취향따라 떠나는</span> 제주여행</h1>
+    <div class="swiper-container travel_slide" data-aos="fade-up">
+      <div class="travel_slide_inner">
+        <div class="swiper-wrapper">
+          <div class="travel_in travel1 swiper-slide">
+            <a href="#none">
+              <div class="travel_text">
+                <h1> &#91;섬X섬&#93;우도 패키지 여행 <br>
+                  &#60;3박4일 숙박&#47;4륜 자동차 &#62;</h1>
+                <p>
+                  #우도 #무조건출발가능 #스터디셀러...
+                </p>
+                <h2>
+                  299,000원~
+                </h2>
+              </div>
+            </a>
+          </div>
+          <div class="travel_in travel2 swiper-slide">
+            <a href="#none">
+              <div class="travel_text">
+                <h1> &#91;효도여행&#93;제주 탄산 온천 특가 <br>
+                  &#60;3인온천&#47;트래킹&#47;윗세오름 &#62;
+                </h1>
+                <p>
+                  #산방산온천 #피로회복 #모이면 모일...
+                </p>
+                <h2>
+                  129,000원~
+                </h2>
+              </div>
+            </a>
+          </div>
+          <div class="travel_in travel3 swiper-slide">
+            <a href="#none">
+              <div class="travel_text">
+                <h1> &#91;완벽투어&#93;마라도 패키지 여행 <br>
+                  &#60;4박5일 숙박&#47;여객선 티켓 &#62;
+                </h1>
+                <p>
+                  #마라도 #무조건출발가능 #스터디셀러...
+                </p>
+                <h2>
+                  299,000원~
+                </h2>
+              </div>
+            </a>
+          </div>
+          <div class="travel_in travel4 swiper-slide">
+            <a href="#none">
+              <div class="travel_text">
+                <h1> &#91;이색투어&#93;비양도 한림읍 여행 <br>
+                  &#60;2박3일&#47;협재 오션뷰 숙소 &#62;</h1>
+                  <p>
+                    #협재X비양도 #동쪽여행패키지 #가성...</p>
+                  <h2>
+                    299,000원~
+                  </h2>
+              </div>
+            </a>
+          </div>
+        </div>       
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <h1 data-aos="fade-up">제주도는 지금 <span>축제ON</span></h1>
+    <ul data-aos="fade-up" class="festival" >
+      <li><a href="#none">
+          <img src="./images/travel/wrap/festival1.png" alt="가시리유채꽃">
+          <p>
+            <img src="./images/travel/wrap/hearts_icon.png" alt="하트아이콘">
+          </p>
+        </a>
+        <div>
+          <h3>가시리 유채꽃 축제</h3>
+          <h4>서귀포 표선면 가시리 산 41</h4>
+        </div>
+      </li>
+      <li><a href="#none">
+          <img src="./images/travel/wrap/festival2.png" alt="청보리축제">
+          <p>
+            <img src="./images/travel/wrap/hearts_icon.png" alt="하트아이콘">
+          </p>
+        </a>
+        <div>
+          <h3>가파도 청보리 축제</h3>
+          <h4>대정읍 가파로 67번길 가파도 일원</h4>
+        </div>
+      </li>
+      <li><a href="#none">
+          <img src="./images/travel/wrap/festival3.png" alt="동백꽃축제">
+          <p>
+            <img src="./images/travel/wrap/hearts_icon.png" alt="하트아이콘">
+          </p>
+        </a>
+        <div>
+          <h3>휴애리 자연생활공원</h3>
+          <h4>서귀포 남원읍 신례동로256</h4>
+        </div>
+      </li>
+      <li><a href="#none">
+          <img src="./images/travel/wrap/festival4.png" alt="고사리축제">
+          <p>
+            <img src="./images/travel/wrap/hearts_icon.png" alt="하트아이콘">
+          </p>
+        </a>
+        <div>
+          <h3>한라산 청정 고사리 축제</h3>
+          <h4>서귀포 남원읍 한남리 산76-7일원</h4>
+        </div>
+      </li>
+    </ul>
+    <div class="event_banner1">
+      <a class="event_banner1_in">
+        <div class="event_banner1_text">
+          <h1>
+            제주의 봄, 더 가볍게 떠나세요! <br>
+            특별 할인 진행 중
+          </h1>
+          <p>
+            숙소 최대 30% 할인 / 체험 프로그램 최대 20% 할인 <br>
+            2025년 3월 15일 ~ 2025년 5월 31일
+          </p>
+        </div>
+        <div class="event_banner1_img">
+          <img src="./images/travel/wrap/event1_banner_img.png" alt="이벤트배너 이미지1">
+        </div>
+      </a>
+    </div>
+    <!-- 이색체험 -->
+    <h1 data-aos="fade-up">제주 속 숨겨진 <span>특별한 경험</span></h1>
+    <div data-aos="fade-up" class="Experience">
+      <div class="Experience_left_bg">
+        <h2>탐라심<br>
+          이색체험 안내</h2>
+        <p>
+          일상의 틀을 깨다,<br>
+          탐라심 이색 체험!
+        </p>
+        <img src="./images/travel/wrap/Experience_boy.png" alt="남자어린이" class="boy">
+        <img src="./images/travel/wrap/Experience_boy_arm.png" alt="남자어린이 팔 애니메이션" class="arm">
+        <img src="./images/travel/wrap/Experience_bg_madaring.png" alt="떨어지는귤" class="mandarin">
+
+      </div>
+      <div>
+      <div class="swiper Experience_slide">
+        <div class="swiper-wrapper">
+          <div class="Experience_box swiper-slide">
+            <a href="#none">
+              <div class="Experience_box_img">
+                <img src="./images/travel/wrap/Experience1.png" alt="해녀체험">
+              </div>
+              <div class="Experience_box_text">
+                <h3>하귀 해녀체험</h3>
+                <ul>
+                  <li>8세이상 소인적용</li>
+                  <li>장비대여 + 전문가 수중촬영 + 해산물 시식</li>
+                  <li>운영시간</li>
+                  <li>9:00/11:00/13:00/15:00</li>
+                </ul>
+                <h2>1인 60,000</h2>
+              </div>
+            </a>
+          </div>
+          <div class="Experience_box swiper-slide">
+            <a href="#none">
+              <div class="Experience_box_img">
+                <img src="./images/travel/wrap/Experience2.png" alt="낙타트래킹">
+              </div>
+              <div class="Experience_box_text">
+                <h3>낙타트래킹+중문카트</h3>
+                <ul>
+                  <li>36개월 미만 탑승 불가</li>
+                  <li>체험시간: 약 15분</li>
+                  <li>운영시간</li>
+                  <li>9:00~18:00(연중무휴/우천시 이용불가)</li>
+                </ul>
+                <h2>1인 30,000</h2>
+              </div>
+            </a>
+          </div>
+          <div class="Experience_box swiper-slide">
+            <a href="#none">
+              <div class="Experience_box_img">
+                <img src="./images/travel/wrap/Experience3.png" alt="중문오프로드체험">
+              </div>
+              <div class="Experience_box_text">
+                <h3>중문 오프로드 체험</h3>
+                <ul>
+                  <li>운전면허소지자/운전가능자만 가능</li>
+                  <li>소아동승시 별도 카시트는 제공되지 않음</li>
+                  <li>운영시간</li>
+                  <li>동절기 10:00~17:00/하절기 10:00~18:00</li>
+                </ul>
+                <h2>1인 40,000</h2>
+              </div>
+            </a>
+          </div>
+          <div class="Experience_box swiper-slide">
+            <a href="#none">
+              <div class="Experience_box_img">
+                <img src="./images/travel/wrap/Experience4.png" alt="요가체험">
+              </div>
+              <div class="Experience_box_text">
+                <h3>요가 원데이 클래스</h3>
+                <ul>
+                  <li>최대 5명까지 소규모 수업</li>
+                  <li>2인10%/3인15%/4인20%/5인25%할인</li>
+                  <li>운영시간</li>
+                  <li>월~일 09:00, 10:30, 16:30 수업진행</li>
+                </ul>
+                <h2>1인 60,000</h2>
+              </div>
+            </a>
+          </div>
+          <div class="Experience_box swiper-slide">
+            <a href="#none">
+              <div class="Experience_box_img">
+                <img src="./images/travel/wrap/Experience5.png" alt="요가체험">
+              </div>
+              <div class="Experience_box_text">
+                <h3>쇠소깍 투명카약</h3>
+                <ul>
+                  <li>3인탑승 기준 5세이상 키130cm이하</li>
+                  <li>2인10%/3인15%/4인20%/5인25%할인</li>
+                  <li>운영시간</li>
+                  <li>월~일 오전 9:00부터 일몰시간 30분 전</li>
+                </ul>
+                <h2>1대 20,000원(2인승)</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="event_banner2">
+      <a class="event_banner2_in">
+        <div class="event_banner2_text">
+          <h1>
+            탐라심 앱을 통해 예약 시 <br>
+            10% 할인쿠폰 증정
+          </h1>
+          <p>
+            체험상품, 여행상품 구매시 10%할인쿠폰 증정. <br>
+            2025년 2월 15일 ~ 2025년 5월 31일
+          </p>
+        </div>
+          <img class="event_banner2_img" src="./images/travel/wrap/event2_banner_img.png" alt="이벤트배너 이미지2">
+          <img class="cloud1" src="./images/travel/wrap/cloud1.png" alt="구름1">
+          <img class="cloud2" src="./images/travel/wrap/cloud1.png" alt="구름2">
+      </a>
+    </div>
+  </div>
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_in">
+        <ul class="sns">
+            <li><a href="#none"><img src="./images/main/footer/youtube_white.png" alt="유투브"></a></li>
+            <li><a href="#none"><img src="./images/main/footer/insta_white.png" alt="인스타"></a></li>
+            <li><a href="#none"><img src="./images/main/footer/facebook_white.png" alt="페이스북"></a></li>
+            <li><a href="#none"><img src="./images/main/footer/twitter_white.png" alt="트위터"></a></li>
+        </ul>
+
+        <div class="footer_text">
+            <ul class="footer_logo">
+                <li><a href="#none"><img src="./images/main/footer/symbol_white.png" alt="심볼"></a></li>
+                <li><a href="#none"><img src="./images/main/footer/logo_white.png" alt="로고"></a></li>
+            </ul>
+            <div class="footer_center">
+                <ul>
+                    <li><a href="#none">서비스 이용약관</a></li>
+                    <li><a href="#none">개인정보 처리방침</a></li>
+                    <li><a href="#none">사업자정보확인</a></li>
+                </ul>
+                <p>주소 제주특별시 서귀포 남원읍 원님로 473</p>
+                <p>FAX 0303-3447-0409</p>
+                <p>통신판매업등록번호 2025-1234567-12-3-4567</p>
+                <p>사업자등록번호 123-45-6789</p>
+            </div>
+            <div class="footer_tel">
+                <h1>064-764-0116</h1>
+                <p>월~금 09:00 - 18:00 점심시간 12:00 - 13:00</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<a href="#" class="top_bt">TOP</a>
+
+  <!-- 제이쿼리라이브러리(제일상단)-->
+  <script src="./script/jquery-3.7.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- aos 자바스크립트 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- my js -->
+  <script src="./script/travel.js"></script>
+</body>
+
+</html>

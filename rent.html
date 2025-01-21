@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./images/main/header/symbol.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>탐라심</title>
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <!-- 스와이퍼 css -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- 나의css -->
+  <link rel="stylesheet" href="./css/rent.css">
+
+</head>
+
+<body>
+  <!-- 마우스커서 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+  <!-- 해더 -->
+  <header>
+    <ul class="top">
+      <li><a href="#none"><img src="./images/main/header/reservation.png" alt="예약내역이미지"></a></li>
+      <li><a href="#none">예약내역</a></li>
+
+      <li><a href="#none"><img src="./images/main/header/login_logout.png" alt="로그인 로그아웃"></a></li>
+
+      <li><a href="#none">로그인/로그아웃</a></li>
+    </ul>
+    <ul class="gnb">
+      <li class="nav">
+        <a href="./travel.html">레저/관광</a>
+
+      </li>
+      <li class="nav">
+        <a href="./rent.html" class="nav_hover">숙박/렌트카</a>
+
+      </li>
+      <li class="nav">
+        <a href="./index.html" class="logo"><img src="./images/main/header/logo.png" alt="로고이미지"></a>
+      </li>
+      <li class="nav">
+        <a href="./store.html">스토어</a>
+
+      </li>
+      <li class="nav">
+        <a href="./community.html">커뮤니티</a>
+
+      </li>
+    </ul>
+  </header>
+  <div data-aos="fade-up" class="swiper visual ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide banner1">
+        <div class="banner_in">
+          <div class="banner_text">
+            <h1>
+              커플 &amp; 패밀리 <br>
+              제주 렌트카 페스티벌
+            </h1>
+            <p>
+              커플 차량 대여 시 무료 차량 업그레이드 <br>
+              가족 단위 대여 시 카시트 무료 제공
+            </p>
+            <a href="#none">자세히보기</a>
+          </div>
+          <img src="./images/rent/visual_banner1.png" alt="메인배너1">
+        </div>
+      </div>
+      <div class="swiper-slide banner2">
+        <div class="banner_in">
+          <div class="banner_text">
+            <h1>
+              청정 제주, 친환경 드라이브<br>
+              전기차 특별 할인 이벤트
+            </h1>
+            <p>
+              전기차 대여 시 최대 30% 할인! <br>
+              무료 충전소 안내 서비스 제공
+            </p>
+            <a href="#none">자세히보기</a>
+          </div>
+          <img src="./images/rent/visual_banner2.png" alt="메인배너2">
+        </div>
+      </div>
+      <div class="swiper-slide banner3">
+        <div class="banner_in">
+          <div class="banner_text">
+            <h1>
+              제주에서 찍고, 달리고, 추억까지 <br>
+              제주 여행 포토 드라이브 이벤트
+            </h1>
+            <p>
+              렌트카로 여행하며 제주 드라이브 사진을 SNS에 업로드 <br>
+              #탐라심렌트카 #제주드라이브
+
+            </p>
+            <a href="#none">자세히보기</a>
+          </div>
+          <img src="./images/rent/visual_banner3.png" alt="메인배너3">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="stop"><img src="./images/rent/stop.png" alt="정지버튼"></div>
+    <div class="start"><img src="./images/rent/start.png" alt="시작버튼"></div>
+  </div>
+  <!-- 본문 -->
+  <div class="wrap">
+    <!-- 렌트카 예약창 -->
+    <h1 data-aos="fade-up">예약하기</h1>
+    <div class="step" data-aos="fade-up">
+      <dl class="orange_bg">
+        <dt>STEP 01</dt>
+        <dd>차량선택</dd>
+      </dl>
+      <dl>
+        <dt>STEP 02</dt>
+        <dd>약관안내 및 동의</dd>
+      </dl>
+      <dl>
+        <dt>STEP 03</dt>
+        <dd>옵션선택</dd>
+      </dl>
+      <dl>
+        <dt>STEP 04</dt>
+        <dd>정보 입력/확인</dd>
+      </dl>
+      <dl>
+        <dt>STEP 05</dt>
+        <dd>예약완료</dd>
+      </dl>
+    </div>
+    <div class="reservation" data-aos="fade-up">
+      <h2>렌트카예약</h2>
+      <hr>
+      <div>
+        <div class="pick_up">
+          <p>픽업정보</p>
+          <form>
+            <p><input type="date" value="2024-10-15"></p>
+            <p><input type="time" value="18:00"></p>
+          </form>
+        </div>
+        <div class="pick_up">
+          <p>반납정보</p>
+          <form>
+            <p><input type="date" value="2024-10-15"></p>
+            <p><input type="time" value="18:00"></p>
+          </form>
+        </div>
+      </div>
+      <a href="#none"><span data-hover="NEXT"><img src="./images/rent/car_icon.png" alt="자동차아이콘">차량검색</span></a>
+    </div>
+    <!-- 베스트초이스 -->
+    <h1 data-aos="fade-up">BEST CHOICE</h1>
+    <ul class="best">
+      <li data-aos="flip-right" data-aos-offset="200" data-aos-delay="200"><a href="#none">
+          <img src="./images/rent/black_box_img.png" alt="블랙박스이미지">
+          <p>이제는 렌터카도 <br>
+            블랙박스가 필수!</p>
+          <h3>안심 추천차량</h3>
+        </a></li>
+      <li data-aos="flip-right" data-aos-offset="200" data-aos-delay="300"><a href="#none">
+          <img src="./images/rent/avante_img.png" alt="아반떼이미지">
+          <p>연비 절약! 경비 절약! <br>
+            알뜰한 제주여행</p>
+          <h3>소형·중형 추천차량</h3>
+        </a></li>
+      <li data-aos="flip-right" data-aos-offset="200" data-aos-delay="400"><a href="#none">
+          <img src="./images/rent/spotage_img.png" alt="스포티지이미지">
+          <p>아이와 함께 <br>
+            이용하기 좋아요!</p>
+          <h3>SUV 추천차량</h3>
+        </a></li>
+      <li data-aos="flip-right" data-aos-offset="200" data-aos-delay="500"><a href="#none">
+          <img src="./images/rent/canival_img.png" alt="카니발이미지">
+          <p>대가족 여행 <br>
+            모두 안전하고 즐겁게!</p>
+          <h3>인원별 추천차량</h3>
+        </a></li>
+    </ul>
+    <!-- 대여기본사항 -->
+    <h1 data-aos="fade-up">대여기본사항</h1>
+    <div class="rent_basic" data-aos="fade-up">
+      <div>
+          <h4><img src="./images/rent/card.png" alt="운전면허카드이미지"></h4>
+        <p>
+          운전자 조건은 만23~26세이상(차종별상이), 국내면허 취득 만3년이상의 조건이 해당되어야합니다. 운전면허증은 <br>
+          고객님의 운전자격을 판단하는 중요한 자료로서 차량대여시 렌터카 담당직원에게 반드시 제시해 주셔야 합니다. <br>
+          만약 차종에 따른 대여자격 기준에 적합하지 않은 면허증을 소지하셨거나 제시하지 않으셨을 경우 대여가 취소될 수 <br>
+          있으므로 이점 유념하여 주시기 바랍니다.
+        </p>
+      </div>
+      <div>
+          <h4><img src="./images/rent/human.png" alt="사람그림자이미지"></h4>
+        <p>
+          운전자 조건은 만23~26세이상(차종별상이), 국내면허 취득 만3년이상의 조건이 해당되어야합니다. 운전면허증은 <br>
+          고객님의 운전자격을 판단하는 중요한 자료로서 차량대여시 렌터카 담당직원에게 반드시 제시해 주셔야 합니다. <br>
+          만약 차종에 따른 대여자격 기준에 적합하지 않은 면허증을 소지하셨거나 제시하지 않으셨을 경우 대여가 취소될 수 <br>
+          있으므로 이점 유념하여 주시기 바랍니다.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 푸터 -->
+<!-- 푸터 -->
+<footer>
+  <div class="footer_in">
+      <ul class="sns">
+          <li><a href="#none"><img src="./images/main/footer/youtube_white.png" alt="유투브"></a></li>
+          <li><a href="#none"><img src="./images/main/footer/insta_white.png" alt="인스타"></a></li>
+          <li><a href="#none"><img src="./images/main/footer/facebook_white.png" alt="페이스북"></a></li>
+          <li><a href="#none"><img src="./images/main/footer/twitter_white.png" alt="트위터"></a></li>
+      </ul>
+
+      <div class="footer_text">
+          <ul class="footer_logo">
+              <li><a href="#none"><img src="./images/main/footer/symbol_white.png" alt="심볼"></a></li>
+              <li><a href="#none"><img src="./images/main/footer/logo_white.png" alt="로고"></a></li>
+          </ul>
+          <div class="footer_center">
+              <ul>
+                  <li><a href="#none">서비스 이용약관</a></li>
+                  <li><a href="#none">개인정보 처리방침</a></li>
+                  <li><a href="#none">사업자정보확인</a></li>
+              </ul>
+              <p>주소 제주특별시 서귀포 남원읍 원님로 473</p>
+              <p>FAX 0303-3447-0409</p>
+              <p>통신판매업등록번호 2025-1234567-12-3-4567</p>
+              <p>사업자등록번호 123-45-6789</p>
+          </div>
+          <div class="footer_tel">
+              <h1>064-764-0116</h1>
+              <p>월~금 09:00 - 18:00 점심시간 12:00 - 13:00</p>
+          </div>
+      </div>
+  </div>
+
+</footer>
+<a href="#" class="top_bt">TOP</a>
+   <!-- aos자바스크립트 -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- 스와이퍼슬라이드 자바스크립트 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- 자바스트립 라이브러리 -->
+  <script src=" ./script/jquery-3.7.1.min.js"></script>
+  <!-- 나의 js -->
+  <script src="./script/rent.js"></script>
+</body>
+
+</html>
