@@ -198,3 +198,6 @@ $('.top_bt').click(function () {
   $('html, body').animate({ scrollTop: 0 }, 400);
   return false;
 });
+AOS.init({
+  duration: 1200 //aos 나타나는 속도
+});
