@@ -129,5 +129,5 @@ $('.top_bt').click(function () {
   return false;
 });
 AOS.init({
-			duration: 1200 //aos 나타나는 속도
-		});
+  duration: 1200 //aos 나타나는 속도
+});
