@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- 심플리css -->
   <link rel="stylesheet" href="./css/jquery.simplyscroll.css">
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- 나의 css -->
   <link rel="stylesheet" href="./css/store.css">
 
@@ -54,7 +56,7 @@
     </ul>
   </header>
   <!-- 메인배너슬라이드 -->
-  <div class="swiper-container mySwiper">
+  <div class="swiper-container mySwiper" data-aos="fade-up">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="banner1 banner">
@@ -102,11 +104,11 @@
     <div class="swiper-pagination"></div>
   </div>
   <!-- 본문 -->
-  <div class="wrap">
+  <div class="wrap" data-aos="fade-up">
     <!-- 추천상품 -->
     <div class="best_Products">
-      <h1>MD <span>추천상품</span></h1>
-      <ul id="scroller">
+      <h1 data-aos="fade-up">MD <span>추천상품</span></h1>
+      <ul id="scroller" data-aos="fade-up">
         <li>
           <img src="./images/store/md1.png" alt="고사리">
           <p>
@@ -197,7 +199,7 @@
       </ul>
     </div>
 
-    <div class="time_sale">
+    <div class="time_sale" data-aos="fade-up">
       <div class="time_sale_in">
         <div class="text">
           <h1>오늘만<span>타임세일</span></h1>
@@ -262,8 +264,8 @@
     </div>
     <!-- 스토어 굿즈/리빙/먹거리 -->
     <div class="items">
-      <h1>오직<span>탐라심에서만</span></h1>
-      <div class="tab">
+      <h1 data-aos="fade-up">오직<span>탐라심에서만</span></h1>
+      <div class="tab" data-aos="fade-up">
         <ul class="tabnav">
           <li><a href="#tab01">굿즈</a></li>
           <li><a href="#tab02">먹거리</a></li>
@@ -463,7 +465,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- 심플리스크롤 -->
   <script src="./script/jquery.simplyscroll.js"></script>
-
+   <!-- aos자바스크립트 -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- 나의 자바스크립트 -->
   <script src="./script/store.js"></script>
 </body>
